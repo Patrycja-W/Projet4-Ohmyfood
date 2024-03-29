@@ -15,6 +15,15 @@ $couleur-tertiaire : #99E2D0;
   
   }
 
+@mixin bouton {
+    width: 60%;
+    border-radius: 60px;
+    padding: 37px;
+    background: linear-gradient(0deg, $couleur-primaire, 40%, $couleur-secondaire);
+    color: white;
+    margin-top: 50px;
+}
+
 /*** Général ***/
 
 body {
@@ -74,12 +83,7 @@ h3, p {
     padding: 90px;
 
     &__bouton {
-        width: 60%;
-        border-radius: 60px;
-        padding: 37px;
-        background: linear-gradient(0deg, $couleur-primaire, 40%, $couleur-secondaire);
-        color: white;
-        margin-top: 50px;
+        @include bouton;
     }
 
 }
