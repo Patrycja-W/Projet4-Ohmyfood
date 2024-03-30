@@ -104,4 +104,34 @@ main {
 
 .bouton {
     @include bouton;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    p {
+        font-family: 'Shrikhand';
+        font-size: 20px;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    } 
+
+    li {
+        padding-bottom: 5px;
+    }
+
+    i {
+        padding-right: 15px;
+    }
+
+
 }
