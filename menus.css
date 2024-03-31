@@ -18,6 +18,10 @@ p {
   margin-top: 5px;
 }
 
+i {
+  position: absolute;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -44,12 +48,24 @@ main {
 
 .titre {
   display: flex;
-  align-items: center;
   font-family: "Shrikhand";
 }
 .titre__icone {
   padding-left: 40px;
   font-size: 25px;
+  padding-top: 25px;
+}
+
+.coeur-rempli {
+  opacity: 0;
+}
+
+.coeur-rempli:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(0deg, #FF79DA, 40%, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .entrees-plats-desserts {
@@ -90,6 +106,10 @@ main {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+
+.bouton:hover {
+  opacity: 0.8;
 }
 
 footer {

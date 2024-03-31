@@ -17,6 +17,10 @@ p {
     margin-top: 5px;
 }
 
+i {
+    position: absolute;
+}
+
 @mixin bouton {
     width: 186px;
     height: 50px;
@@ -59,15 +63,25 @@ main {
 
 .titre {
     display: flex;
-    align-items: center;
     font-family: 'Shrikhand';
 
     &__icone {
         padding-left: 40px;
         font-size: 25px;
+        padding-top: 25px;
+
     }
 }
 
+.coeur-rempli {
+    opacity: 0;}
+
+.coeur-rempli:hover {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(0deg, #FF79DA , 40%, #9356DC);
+    background-clip: text;
+}
 
 
 
@@ -105,6 +119,10 @@ main {
 .bouton {
     @include bouton;
     margin-bottom: 40px;
+}
+
+.bouton:hover {
+    opacity: 0.8;
 }
 
 footer {
