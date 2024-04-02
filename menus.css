@@ -1,3 +1,4 @@
+/*** General ***/
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
@@ -5,7 +6,11 @@ body {
 
 h1 {
   font-size: 28px;
-  margin-left: 15px;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  h1 {
+    padding-right: 20px;
+  }
 }
 
 h3, p {
@@ -18,13 +23,12 @@ p {
   margin-top: 5px;
 }
 
-i {
-  position: absolute;
-}
-
+/*** Header ***/
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 70%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -34,26 +38,66 @@ i {
   font-size: 20px;
 }
 .header__logo {
-  width: 60%;
+  width: 55%;
 }
-.header__image {
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .header__logo {
+    width: 30%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .header {
+    width: 60%;
+    justify-content: space-between;
+  }
+}
+
+.image {
   width: 100%;
 }
-
-main {
-  background-color: #F3F3F3;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .image {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
+/*** Main ***/
+main {
+  background-color: #F3F3F3;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  position: relative;
+  margin-top: -50px;
+  padding-top: 15px;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  main {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+/*** Titre et coeur rempli ***/
 .titre {
   display: flex;
   font-family: "Shrikhand";
+  width: 90%;
+  justify-content: space-around;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .titre {
+    width: 100%;
+    justify-content: center;
+  }
 }
 .titre__icone {
-  padding-left: 40px;
   font-size: 25px;
-  padding-top: 25px;
+  padding-top: 20px;
+}
+.titre__icone i {
+  position: absolute;
 }
 
 .coeur-rempli {
@@ -68,12 +112,18 @@ main {
           background-clip: text;
 }
 
+/*** Entrees plats et desserts ***/
 .entrees-plats-desserts {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   margin-left: 15px;
   font-size: 16px;
   height: 27px;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .entrees-plats-desserts {
+    margin-left: 18%;
+  }
 }
 .entrees-plats-desserts__flex {
   display: flex;
@@ -90,11 +140,17 @@ main {
   box-shadow: 4px 12px 21px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
 }
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  .entrees-plats-desserts__card {
+    width: 60%;
+  }
+}
 .entrees-plats-desserts__prix {
   display: flex;
   align-items: end;
 }
 
+/*** bouton commander ***/
 .bouton {
   width: 186px;
   height: 50px;
@@ -112,12 +168,19 @@ main {
   opacity: 0.8;
 }
 
+/*** Footer ***/
 footer {
   background-color: #353535;
   color: white;
   padding-left: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 footer p {
   font-family: "Shrikhand";
@@ -126,6 +189,11 @@ footer p {
 footer ul {
   list-style-type: none;
   padding: 0px;
+}
+@media all and (min-width: 768px) and (max-width: 1440px) {
+  footer ul {
+    display: flex;
+  }
 }
 footer li {
   padding-bottom: 5px;

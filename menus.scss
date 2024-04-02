@@ -1,10 +1,13 @@
+/*** General ***/
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
  h1 {
     font-size: 28px;
-    margin-left: 15px;
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        padding-right: 20px;
+    }
  }
 
 h3, p {
@@ -17,9 +20,6 @@ p {
     margin-top: 5px;
 }
 
-i {
-    position: absolute;
-}
 
 @mixin bouton {
     width: 186px;
@@ -33,10 +33,14 @@ i {
     margin-top: 30px;
 }
 
+/*** Header ***/
+
 .header {
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 70%;
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -47,29 +51,65 @@ i {
     }
 
     &__logo {
-        width: 60%;
+        width: 55%;
+
+        @media all and (min-width: 768px) and (max-width: 1440px) {
+            width: 30%;
+        }
     }
 
-    &__image {
-        width: 100%;
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        width: 60%;
+        justify-content: space-between;
     }
+    
 }
+ .image {
+    width: 100%;
+
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        height: 350px;
+        object-fit: cover;
+    }
+ }
+
+/*** Main ***/
 
 main {
     background-color: #F3F3F3;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    position: relative;
+    margin-top: -50px;
+    padding-top: 15px;
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
 }
+
+/*** Titre et coeur rempli ***/
 
 .titre {
     display: flex;
     font-family: 'Shrikhand';
+    width: 90%;
+    justify-content: space-around;
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        width: 100%;
+        justify-content: center;
+    }
+
 
     &__icone {
-        padding-left: 40px;
-        font-size: 25px;
-        padding-top: 25px;
 
+        font-size: 25px;
+        padding-top: 20px;
+
+    }
+
+    &__icone i {
+        position:absolute;
     }
 }
 
@@ -84,6 +124,7 @@ main {
 }
 
 
+/*** Entrees plats et desserts ***/
 
 .entrees-plats-desserts {
     border-bottom: 3px solid #99E2D0;
@@ -91,6 +132,9 @@ main {
     margin-left: 15px;
     font-size: 16px;
     height: 27px;
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        margin-left: 18%;
+    }
 
     &__flex {
         display: flex;
@@ -107,6 +151,9 @@ main {
         padding: 15px;
         box-shadow: 4px 12px 21px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
+        @media all and (min-width: 768px) and (max-width: 1440px) {
+            width: 60%;
+        }
     }
 
     &__prix {
@@ -115,6 +162,7 @@ main {
     }
 }
 
+/*** bouton commander ***/
 
 .bouton {
     @include bouton;
@@ -125,13 +173,19 @@ main {
     opacity: 0.8;
 }
 
+/*** Footer ***/
+
 footer {
     background-color: #353535;
     color: white;
     padding-left: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
-
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
     p {
         font-family: 'Shrikhand';
         font-size: 20px;
@@ -141,6 +195,9 @@ footer {
     ul {
         list-style-type: none;
         padding: 0px;
+        @media all and (min-width: 768px) and (max-width: 1440px) {
+            display: flex;
+        }
     } 
 
     li {
