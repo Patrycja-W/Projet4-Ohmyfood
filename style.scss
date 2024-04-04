@@ -11,17 +11,22 @@ $couleur-tertiaire : #99E2D0;
 
 @mixin bouton-shadow {
 
-    box-shadow: 4px 12px 21px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px 0px #00000026;
   
   }
 
-@mixin bouton {
-    width: 60%;
-    border-radius: 60px;
-    padding: 37px;
-    background: linear-gradient(0deg, $couleur-primaire, 40%, $couleur-secondaire);
+  @mixin bouton {
+    width: 220px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #9356DC, 40%, #FF79DA);
     color: white;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    box-shadow: 0px 4px 10px 0px #00000040;
+
 }
 
 /*** Général ***/
@@ -31,13 +36,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-main {
-    font-size: 40px;
+p {
+    font-size: 18px;
+    font-weight: 300;
 }
-
 a {
     color: inherit;
     text-decoration: none;
+}
+
+h1 {
+    font-size: 24px;
 }
 
 h3, p {
@@ -63,17 +72,14 @@ h3, p {
     flex-direction: column;
     align-items: center;
 
-    i {
-        padding-right: 40px;
-    }
-
     &__img {
-        width: 60%;
-        margin: 45px;
+        width: 55%;
+        margin: 20px;
     }
 }
 
 .localisation {
+    position: relative;
     background-color: #EAEAEA;
     width: 100%;
     height: 3em;
@@ -81,18 +87,15 @@ h3, p {
     justify-content: center;
     align-items: center;
     text-align-last: center;
-    box-shadow: 1px 2px 15px #646060;
-    font-size: 40px;
-    margin-bottom: 5px;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 /*** Explorer ***/
 
 .explorer {
     background-color: #F3F3F3;
-
     text-align: -webkit-center;
-    padding: 90px;
+    padding: 30px 35px 50px;
 
     &__bouton {
         @include bouton;
@@ -108,11 +111,11 @@ h3, p {
 
 .navbar {
 
-    margin: 40px;
+    margin: 35px 20px 35px;
 
     i {
-        padding-left: 100px;
-        padding-right: 70px;
+        padding-left: 35px;
+        padding-right: 20px;
         color: #7E7E7E;
     }
 
@@ -127,11 +130,11 @@ h3, p {
     }
 
     &__bouton {
-        width: 90%;
-        height: 4em;
+        width: 100%;
+        height: 72px;
         @include bouton-shadow;
-        margin-bottom: 50px;
-        border-radius: 35px;
+        margin-bottom: 20px;
+        border-radius: 20px;
         background-color: #F6F6F6;
         display: flex;
         align-items: center;
@@ -141,71 +144,81 @@ h3, p {
     &__chiffre {
         border-radius: 50%;
         background-color: #9356DC;
-        width: 60px;
-        height: 60px;
+        width: 20px;
+        height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
+        font-size: 12px;
         position: absolute;
-        left: -25px;
+        left: -5px;
     }
 }
 
 /*** Restaurants ***/
-
-.restaurants {
-    padding: 40px;
+ .restaurants {
+    padding: 20px;
     background-color: #F6F6F6;
 
-    &__card {
-        background-color: white;
-        border-radius: 40px;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    &__nouveau {
-        width: 230px;
-        height: 75px;
-        border-radius: 10px;
-        background-color: #99E2D0;
-        position: absolute;
-        right: 40px;
-        top: 40px;
-        color: #008766;
+    &__flex {
+    
         display: flex;
-        align-items: center;
+        flex-flow: wrap;
         justify-content: center;
     }
+    
+        &__card {
+            background-color: white;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            position: relative;
+            width: 340px;
+            height: 251px;
+        }
+    
+        &__nouveau {
+            width: 80px;
+            height: 29px;
+            border-radius: 2px;
+            background-color: #99E2D0;
+            position: absolute;
+            right: 14px;
+            top: 14px;
+            color: #008766;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__image {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 160px;
+        object-fit: cover;
+        }
+    
+        &__texte {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+          
+        }
+    
+        &__icone {
+            display: flex;
+            padding-right: 35px;
+    
+        }
+    
+        &__icone i {
+            font-size: 30px;
+            position: absolute;
+        }
+    
+ }
 
-    &__image {
-    width: 100%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 460px;
-    object-fit: cover;
-    }
-
-    &__texte {
-        padding: 40px;
-        display: flex;
-        justify-content: space-between;
-      
-    }
-
-    &__icone {
-        display: flex;
-        align-items: center;
-        padding-right: 65px;
-
-    }
-
-    &__icone i {
-        font-size: 55px;
-        position: absolute;
-    }
-}
 
 
 /*** Footer ***/
@@ -213,10 +226,13 @@ h3, p {
 footer {
     background-color: #353535;
     color: white;
-    padding: 40px;
-
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
     p {
         font-family: 'Shrikhand';
+        font-size: 20px;
 
     }
 
@@ -226,13 +242,13 @@ footer {
     } 
 
     li {
-        margin-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     i {
-        padding-right: 60px;
-
+        padding-right: 15px;
     }
+
 
 }
 
