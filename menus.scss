@@ -26,13 +26,14 @@ p {
     width: 186px;
     height: 50px;
     border-radius: 25px;
-    background: linear-gradient(0deg, #9356DC, 40%, #FF79DA);
+    background: linear-gradient(175deg, #FF79DA, #9356DC);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
     box-shadow: 0px 4px 10px 0px #00000040;
+    transition: all 500ms;
 
 }
 
@@ -44,8 +45,7 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 70%;
-    padding-top: 20px;
-    padding-bottom: 15px;
+
 
     &__icone {
         padding-left: 20px;
@@ -54,17 +54,13 @@ p {
     }
 
     &__logo {
-        width: 55%;
+        width: 197px;
+        height: 36px;
+        margin: 15px;
 
-        @media all and (min-width: 768px) and (max-width: 1440px) {
-            width: 30%;
-        }
     }
 
-    @media all and (min-width: 768px) and (max-width: 1440px) {
-        width: 60%;
-        justify-content: space-between;
-    }
+   
     
 }
  .image {
@@ -117,7 +113,8 @@ main {
 }
 
 .coeur-rempli {
-    opacity: 0;}
+    opacity: 0;
+}
 
 .coeur-rempli:hover {
     opacity: 1;
@@ -175,6 +172,7 @@ main {
 
 .bouton:hover {
     opacity: 0.8;
+    box-shadow: 0 7px 10px -3px #7e7e7e;
 }
 
 /*** Footer ***/
@@ -186,31 +184,60 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
     @media all and (min-width: 768px) and (max-width: 1440px) {
-        display: flex;
-        flex-direction: row-reverse;
+        padding-top: 60px;
     }
+
     
     p {
         font-family: 'Shrikhand';
         font-size: 20px;
-
+        margin-bottom: 20px;
+        @media all and (min-width: 768px) and (max-width: 1440px) {
+       
+            padding-right: 45px;
+        }
     }
 
     ul {
         list-style-type: none;
         padding: 0px;
+        margin: 0px;
         @media all and (min-width: 768px) and (max-width: 1440px) {
             display: flex;
+            padding-right: 45px;
         }
     } 
 
     li {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
+        @media all and (min-width: 768px) and (max-width: 1440px) {
+            padding-right: 15px;
+        }
     }
 
     i {
-        padding-right: 15px;
+        width: 30px;
     }
 
 
+}
+
+.footer_flex {
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.ul_flex {
+    @media all and (min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.contact_mail {
+    color: white;
+    text-decoration: none;
 }
