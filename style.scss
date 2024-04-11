@@ -84,7 +84,7 @@ h3, p {
     text-align-last: center;
     box-shadow: 0px 4px 4px 0px #00000040;
     color: #353535;
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px)  {
         box-shadow: none;
     }
 
@@ -102,7 +102,7 @@ h3, p {
     
     h1{
         width: 275px;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px) {
             width: 100%;
             font-size: 40px;
         }
@@ -110,7 +110,7 @@ h3, p {
 
     p {
         width: 315px;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px)  {
             width: 100%;
         }
     }
@@ -131,10 +131,15 @@ h3, p {
 .navbar {
 
     margin: 35px 20px 35px;
+    @media all and (min-width: 768px)  {
+        padding-left: 13%;
+        padding-right: 13%;
+    }
 
     i {
-        padding-left: 35px;
-        padding-right: 20px;
+        width: 75px;
+        display: flex;
+        justify-content: center;
         color: #7E7E7E;
     }
 
@@ -146,11 +151,12 @@ h3, p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px)  {
             flex-direction: row;
             justify-content: space-between;
         }
     }
+
 
     &__bouton {
         width: 322px;
@@ -162,6 +168,9 @@ h3, p {
         display: flex;
         align-items: center;
         position: relative;
+        @media all and (min-width: 768px)  {
+            width: 30%;
+        }
     }
 
     &__chiffre {
@@ -183,22 +192,29 @@ h3, p {
  .restaurants {
     padding: 20px;
     background-color: #F6F6F6;
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px)  {
         padding-left: 15%;
         padding-right: 15%;
     }
 
     &__flex {
-    
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px) {
             display: flex;
             flex-flow: wrap;
             justify-content: space-between;
         }
     
+    }
+
+    &__flex a {
+        width: 95%;
+        @media all and (min-width: 768px)  {
+            width: 45%;
+        }
     }
     
         &__card {
@@ -206,10 +222,10 @@ h3, p {
             border-radius: 15px;
             margin-bottom: 50px;
             position: relative;
-            width: 340px;
+            width: 100%;
             height: 251px;
-            @media all and (min-width: 768px) and (max-width: 1440px) {
-                width: 490px;
+            @media all and (min-width: 768px)  {
+                width: 100%;
             }
         }
     
@@ -293,7 +309,7 @@ footer {
     padding-left: 30px;
     padding-bottom: 20px;
     padding-top: 20px;
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px) {
         padding-top: 60px;
     }
 
@@ -302,7 +318,7 @@ footer {
         font-family: 'Shrikhand';
         font-size: 20px;
         margin-bottom: 20px;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px)  {
        
             padding-right: 45px;
         }
@@ -312,7 +328,7 @@ footer {
         list-style-type: none;
         padding: 0px;
         margin: 0px;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px)  {
             display: flex;
             padding-right: 45px;
         }
@@ -320,7 +336,7 @@ footer {
 
     li {
         padding-bottom: 10px;
-        @media all and (min-width: 768px) and (max-width: 1440px) {
+        @media all and (min-width: 768px)  {
             padding-right: 15px;
         }
     }
@@ -333,14 +349,14 @@ footer {
 }
 
 .footer_flex {
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px)  {
         display: flex;
         flex-direction: row-reverse;
     }
 }
 
 .ul_flex {
-    @media all and (min-width: 768px) and (max-width: 1440px) {
+    @media all and (min-width: 768px)  {
         display: flex;
         justify-content: flex-end;
         align-items: center;
