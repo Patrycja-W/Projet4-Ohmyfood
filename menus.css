@@ -33,6 +33,7 @@ p {
   width: 18%;
   padding-left: 20px;
   font-size: 20px;
+  color: #353535;
 }
 .header__logo {
   width: 197px;
@@ -42,6 +43,9 @@ p {
 
 .image {
   width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media all and (min-width: 768px) {
   .image {
