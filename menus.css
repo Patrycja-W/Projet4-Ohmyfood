@@ -331,4 +331,16 @@ footer i {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.entrees-plats-desserts__texte {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.entrees-plats-desserts__card p, h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }/*# sourceMappingURL=menus.css.map */
