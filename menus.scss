@@ -1,15 +1,20 @@
 /*** General ***/
+
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
  h1 {
     font-size: 28px;
+    width: 82%;
     @media all and (min-width: 768px)  {
         padding-right: 20px;
+        width: auto;
     }
  }
-
+ h3 {
+    padding-top: 15px;
+ }
 h3, p {
     margin: 0px;
     font-size: 18px;
@@ -21,19 +26,24 @@ p {
     font-weight: 300;
 }
 
+$couleur-primaire : #9356DC;
+
+$couleur-secondaire : #FF79DA;
+
+$couleur-tertiaire : #99E2D0;
 
 @mixin bouton {
     cursor: pointer;
     width: 186px;
     height: 50px;
     border-radius: 25px;
-    background: linear-gradient(175deg, #FF79DA, #9356DC);
+    background: linear-gradient(175deg, $couleur-secondaire, $couleur-primaire);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 30px;
-    box-shadow: 0px 4px 10px 0px #00000040;
+    box-shadow: 0px 3px 10px 0px #00000040;
     transition: all 500ms;
 
 }
@@ -95,18 +105,17 @@ main {
 .titre {
     display: flex;
     font-family: 'Shrikhand';
-    width: 90%;
-    justify-content: space-around;
+    margin-left: 5%;
     @media all and (min-width: 768px) {
-        width: 100%;
         justify-content: center;
+        margin-left: 0%;
     }
 
 
     &__icone {
 
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 24px;
 
     }
 
@@ -164,7 +173,9 @@ main {
         display: flex;
         justify-content: space-between;
         border-radius: 20px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
         box-shadow: 4px 12px 21px rgba(0, 0, 0, 0.1);
         margin-bottom: 15px;
         @media all and (min-width: 768px)  {
@@ -290,4 +301,61 @@ footer {
         opacity: 1;
         transform: translateY(0px);
     }
+  }
+
+
+  /* Animation slide card */ 
+
+.slidecard{
+  background-color: $couleur-tertiaire;
+  position: absolute;
+  height: 100%;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -65px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.entrees-plats-desserts__card {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.entrees-plats-desserts__card:hover .slidecard{
+    opacity: 1;
+    right: 0;
+    
+  }
+  
+   .entrees-plats-desserts__prix{
+    transition: 1s;
+   }
+  .entrees-plats-desserts__prix:hover{
+     padding-right: 19%;
+     
+  
+  }
+  .icone {
+    font-size: 20px;
+    color: white;
+
+  }
+
+   /* ... sur les menus */ 
+
+  .entrees-plats-desserts__texte:hover h3 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .entrees-plats-desserts__texte:hover p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
