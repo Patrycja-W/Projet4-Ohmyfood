@@ -118,7 +118,7 @@ h3, p {
   justify-content: center;
   color: #7E7E7E;
 }
-.navbar i:hover {
+.navbar .navbar__bouton:hover i {
   color: #9356DC;
 }
 .navbar__flex {
@@ -142,6 +142,7 @@ h3, p {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 @media all and (min-width: 768px) {
   .navbar__bouton {

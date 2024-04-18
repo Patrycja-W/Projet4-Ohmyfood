@@ -142,7 +142,7 @@ h3, p {
         color: #7E7E7E;
     }
 
-    i:hover {
+    .navbar__bouton:hover i {
         color: $couleur-primaire;
     }
 
@@ -167,6 +167,7 @@ h3, p {
         display: flex;
         align-items: center;
         position: relative;
+        cursor: pointer;
         @media all and (min-width: 768px)  {
             width: 30%;
         }

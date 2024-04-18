@@ -141,6 +141,7 @@ main {
   align-items: center;
 }
 .entrees-plats-desserts__card {
+  cursor: pointer;
   background-color: white;
   width: 85%;
   display: flex;
@@ -286,7 +287,7 @@ footer i {
   background-color: #99E2D0;
   position: absolute;
   height: 100%;
-  width: 18%;
+  width: 59px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +313,7 @@ footer i {
 }
 
 .entrees-plats-desserts__card:hover .entrees-plats-desserts__prix {
-  padding-right: 19%;
+  padding-right: 60px;
 }
 
 .icone {
