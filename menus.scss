@@ -54,14 +54,16 @@ $couleur-tertiaire : #99E2D0;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
 
 
     &__icone {
-        width: 18%;
+        width: 95%;
         padding-left: 20px;
         font-size: 20px;
         color: #353535;
+        position: absolute;
     }
 
     &__logo {
@@ -335,7 +337,7 @@ footer {
    .entrees-plats-desserts__prix{
     transition: 1s;
    }
-  .entrees-plats-desserts__prix:hover{
+  .entrees-plats-desserts__card:hover .entrees-plats-desserts__prix{
      padding-right: 19%;
      
   
@@ -348,13 +350,14 @@ footer {
 
    /* ... sur les menus */ 
 
-  .entrees-plats-desserts__texte:hover h3 {
+   .entrees-plats-desserts__card:hover .entrees-plats-desserts__texte  {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
 
-  .entrees-plats-desserts__texte:hover p {
+
+  .entrees-plats-desserts__card:hover p, h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
