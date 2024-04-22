@@ -250,27 +250,6 @@ h3, p {
   cursor: pointer;
 }
 
-.coeur-rempli {
-  opacity: 0;
-}
-
-.coeur-rempli:hover {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(0deg, #FF79DA, 40%, #9356DC);
-  -webkit-background-clip: text;
-          background-clip: text;
-  animation: grossir 1s;
-}
-
-@keyframes grossir {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /*** Footer ***/
 footer {
   background-color: #353535;
@@ -337,11 +316,33 @@ footer i {
   text-decoration: none;
 }
 
+/*** Animation coeur ***/
+.coeur-rempli {
+  opacity: 0;
+}
+
+.coeur-rempli:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(0deg, #FF79DA, 40%, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: grossir 1s;
+}
+
+@keyframes grossir {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*** Animation loader ***/
 .loading {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  background-image: linear-gradient(170deg, #FF79DA, #9356DC);
   z-index: 1;
   position: fixed;
   display: flex;
@@ -383,7 +384,7 @@ footer i {
   height: 40px;
   text-align: center;
   font-size: 50px;
-  color: wheat;
+  color: white;
   animation: rotationSpinner 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
