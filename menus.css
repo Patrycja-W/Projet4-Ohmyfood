@@ -294,14 +294,11 @@ footer i {
   justify-content: center;
   right: -65px;
   opacity: 0;
-  overflow: hidden;
   transition: 1s;
 }
 
 .entrees-plats-desserts__card {
-  position: relative;
   overflow: hidden;
-  transition: 1s;
 }
 
 .entrees-plats-desserts__card:hover .slidecard {

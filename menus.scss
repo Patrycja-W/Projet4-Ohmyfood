@@ -319,25 +319,22 @@ footer {
   justify-content: center;
   right: -65px;
   opacity: 0;
-  overflow: hidden;
   transition: 1s;
 }
 
 .entrees-plats-desserts__card {
-    position: relative;
     overflow: hidden;
-    transition: 1s;
 }
 
 .entrees-plats-desserts__card:hover .slidecard{
     opacity: 1;
     right: 0;
-    
-  }
+    }
   
    .entrees-plats-desserts__prix{
     transition: 1s;
    }
+   
   .entrees-plats-desserts__card:hover .entrees-plats-desserts__prix{
      padding-right: 60px;
      
