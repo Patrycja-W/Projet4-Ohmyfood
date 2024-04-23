@@ -149,6 +149,12 @@ h3, p {
     width: 30%;
   }
 }
+@media all and (min-width: 426px) and (max-width: 767px) {
+  .navbar__bouton {
+    justify-content: center;
+    width: 70%;
+  }
+}
 .navbar__chiffre {
   border-radius: 50%;
   background-color: #9356DC;
