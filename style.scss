@@ -425,7 +425,8 @@ footer {
     color: white;
     animation: rotationSpinner 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
-  @keyframes rotationSpinner {
+
+@keyframes rotationSpinner {
     0% {
       transform: rotateY(360deg);
       opacity: 0;
@@ -436,4 +437,4 @@ footer {
       opacity: 1;
   
     }
-  }
+}

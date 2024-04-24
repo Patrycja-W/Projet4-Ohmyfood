@@ -329,46 +329,44 @@ footer {
 .entrees-plats-desserts__card:hover .slidecard{
     opacity: 1;
     right: 0;
-    }
+}
   
-   .entrees-plats-desserts__prix{
+.entrees-plats-desserts__prix{
     transition: 1s;
-   }
+}
    
-  .entrees-plats-desserts__card:hover .entrees-plats-desserts__prix{
-     padding-right: 60px;
-     
-  
-  }
-  .icone {
+.entrees-plats-desserts__card:hover .entrees-plats-desserts__prix{
+    padding-right: 60px;
+}  
+
+.icone {
     font-size: 20px;
     color: white;
-
-  }
+}
 
    /* ... sur les menus */ 
 
-   .entrees-plats-desserts__card:hover .entrees-plats-desserts__texte  {
+.entrees-plats-desserts__card:hover .entrees-plats-desserts__texte  {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
 
-  .entrees-plats-desserts__card:hover p, h3 {
+.entrees-plats-desserts__card:hover p, h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
-  .entrees-plats-desserts__texte  {
+.entrees-plats-desserts__texte  {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
-  .entrees-plats-desserts__card p, h3 {
+.entrees-plats-desserts__card p, h3 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
