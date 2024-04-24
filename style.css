@@ -371,17 +371,15 @@ footer i {
 .loader {
   color: white;
   font-family: "Shrikhand", cursive;
-  animation: titleLoader 3s linear both;
+  animation: titleLoader 3s both;
 }
 
 @keyframes titleLoader {
   0% {
     letter-spacing: 20px;
-    transform: translateZ(-20px);
     opacity: 0;
   }
   100% {
-    transform: translateZ(0);
     opacity: 1;
   }
 }
