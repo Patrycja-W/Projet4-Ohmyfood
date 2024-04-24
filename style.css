@@ -276,6 +276,7 @@ footer p {
 }
 @media all and (min-width: 768px) {
   footer p {
+    margin-bottom: 13px;
     padding-right: 45px;
   }
 }
